@@ -29,10 +29,10 @@ camera.set_controls({"AfMode": controls.AfModeEnum.Continuous})
 
 # == Setup Camera Interface ==
 ui_config = UIConfig()
-ui_config.load_fields("/camera/Software/ui.cfg", True)
+ui_config.load_fields("./ui.cfg", True)
 
 camera_config = CameraConfig()
-camera_config.load_fields("/camera/Software/camera.cfg", True)
+camera_config.load_fields("./camera.cfg", True)
 camera_interface = CameraInterface(camera_config, camera, ui_config.get_field("ui_save_path").get())
 
 # == Setup Rotary Interface ==
@@ -46,7 +46,6 @@ battery_interface.start()
 
 # == Setup UI ==
 
-
 ui = UIImplementation1in32(ui_config, mono_display, camera_interface, rotary_interface, [battery_interface, camera_config])
 
 ui.start()
@@ -58,5 +57,6 @@ battery_interface.stop()
 camera.stop()
 
 mono_display.power_off()
+
 
 
