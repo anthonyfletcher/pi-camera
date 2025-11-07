@@ -1,6 +1,10 @@
 # Introduction
 
+![Photo of camera](https://github.com/anthonyfletcher/pi-camera/blob/ac97167eca2d344047a49022e800c763c968c9ed/images/camera.jpg)
 
+This project showcases a custom-built digital camera powered by a Raspberry Pi Zero 2 W.  The aim of the project was to use low power and low cost compoents (camera permitting) which inspired the implementation of a library for drawing to monochrome displays.
+
+![Photo of display](https://github.com/anthonyfletcher/pi-camera/blob/ac97167eca2d344047a49022e800c763c968c9ed/images/display.jpg)
 
 # Components
 
@@ -13,6 +17,10 @@
 * Knob: Anodized Aluminium Machined Knob 20mm
 
 # Models
+
+![Image of model](https://github.com/anthonyfletcher/pi-camera/blob/ac97167eca2d344047a49022e800c763c968c9ed/images/models.png)
+
+All models were built using TinkerCad.
 
 * Camera_Body.stl: The body of the camera.
 * Camera_Front.stl: The front panel of the camera - fixed with 4xM2*6 screws.
